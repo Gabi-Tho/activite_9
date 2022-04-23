@@ -27,22 +27,29 @@ for ($i = 0; $i < count($subDeck1); ++$i){
     $deckShuffled[($i*2)+1] = $subDeck2[$i];
 }
 
-
+echo "<table>";
+echo "<tr>";
 for ($i = 0; $i < 13; ++$i){
-    echo $deckShuffled[$i]." ";
+    echo "<td>".$deckShuffled[$i]." ";
 }
-echo "<br>";
+echo "</tr>";
+echo "<tr>";
 for ($i = 13; $i < 26; ++$i){
-    echo $deckShuffled[$i]." ";
+    echo"<td>". $deckShuffled[$i]." ";
 }
-echo "<br>";
+echo "</tr>";
+echo "<tr>";
 for ($i = 26; $i < 39; ++$i){
-    echo $deckShuffled[$i]." ";
+    echo"<td>". $deckShuffled[$i]." ";
 }
-echo "<br>";
+echo "</tr>";
+echo "<tr>";
 for ($i = 39; $i < 52; ++$i){
-    echo $deckShuffled[$i]." ";
+    echo"<td>". $deckShuffled[$i]." ";
 }
+echo "</tr>";
+echo "</table>";
+
 
 
 
